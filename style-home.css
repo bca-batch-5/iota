@@ -1,3 +1,7 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body {
   font-family: sans-serif;
   background: white;
@@ -12,20 +16,20 @@ a:focus {
 }
 
 .navbar {
-  display: flex;
-
-  padding: 15px 10px;
+  /* padding: 15px 10px; */
   background: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   border: none;
-  border-radius: 0;
-  margin-bottom: 40px;
+  /* margin-bottom: 10px; */
 }
 
 .navbar-btn {
   box-shadow: none;
   outline: none !important;
   border: none;
+}
+#navbarSupportedContent {
+  justify-content: space-evenly;
 }
 
 .line {
@@ -35,9 +39,7 @@ a:focus {
   margin: 40px 0;
 }
 
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
+/*  */
 
 .wrapper {
   display: flex;
@@ -46,7 +48,7 @@ a:focus {
 }
 
 #sidebar {
-  min-width: 250px;
+  min-width: 347px;
   max-width: 250px;
   background: #ffffff;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
@@ -55,6 +57,7 @@ a:focus {
 }
 .container-profile {
   margin-top: 100px;
+  margin-bottom: 100px;
   text-align: center;
 }
 .container-profile img {
@@ -62,11 +65,20 @@ a:focus {
   height: 150px;
   border-radius: 50%;
 }
+.container-profile p {
+  padding-top: 30px;
+}
+
+.container-list {
+  margin-top: 80px;
+  /* margin-left: 90px; */
+  font-size: 25px;
+  text-align: center;
+}
 #sidebar.active {
-  margin-left: -250px;
+  margin-left: -347px;
 }
 #sidebar ul p {
-  width: 244px;
   height: 78px;
   left: 82px;
   top: 232px;
@@ -113,47 +125,112 @@ ul ul a {
   background: white;
 }
 
-ul.CTAs {
-  padding: 20px;
-}
-
-ul.CTAs a {
-  text-align: center;
-  font-size: 0.9em !important;
-  display: block;
-  border-radius: 5px;
-  margin-bottom: 5px;
-}
-
-a.download {
-  background: #fff;
-  color: #7386d5;
-}
-
-a.article,
-a.article:hover {
-  background: #6d7fcc !important;
-  color: #fff !important;
-}
 #nbdropdown {
   text-decoration: none;
   color: #000000;
+  font-size: 20px;
+  padding-right: 50px;
+}
+.dropdown-item {
+  font-size: 25px;
+}
+/* search */
+.container-icon {
+  width: 100px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.container-icon input#search {
+  width: 400px;
+  height: 50px;
+  background: white;
+  font-size: 20px;
+  float: left;
+
+  padding-left: 45px;
+  border-radius: 20px;
+  border: 1px solid #cacaca;
 }
 
-#navbarSupportedContent {
-  display: flex;
+.container-icon .icon {
+  position: relative;
+  left: 180px;
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+#search {
+  position: relative;
+  left: 180px;
+  font-size: 20px;
+}
+
+/* card */
+.card {
+  padding-top: 50px;
+  margin: 10px;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+.card img {
+  width: fit-content;
+  height: 300px;
 }
 /* content */
 
 #content {
+  padding-left: 10px;
   width: 100%;
-  padding: 20px;
   min-height: 100vh;
   transition: all 0.3s;
 }
 
-.navbar navbar-expand-lg {
+.container-fluid {
   display: flex;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  align-content: center;
+  text-align: center;
+  font-size: 30px;
+}
+h3 {
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* carousel */
+.gallery {
+  background: white;
+}
+
+.gallery-cell {
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+  margin-top: 50px;
+  border-radius: 15px;
+  background: hsla(0, 0%, 0%, 0.062);
+  padding: 50px;
+  text-align: center;
+}
+.gallery-cell img {
+  height: 300px;
+}
+
+.gallery-cell:before {
+  display: block;
+  line-height: 200px;
+  color: white;
 }
 
 /* ---------------------------------------------------
@@ -162,7 +239,7 @@ a.article:hover {
 
 @media (max-width: 768px) {
   #sidebar {
-    margin-left: -250px;
+    margin-left: -347px;
   }
   #sidebar.active {
     margin-left: 0;
