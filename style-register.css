@@ -31,15 +31,14 @@
   margin-top: 10px;
   margin-left: 10px;
 }
-#register-checkbox {
+#exampleCheck1 {
   font-size: 17px;
   line-height: 22px;
   color: #d0cccc;
 }
-.register-checkbox input {
+#exampleCheck1 input {
   width: 20px;
   height: 20px;
-  background: #ffffff;
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 2px;
