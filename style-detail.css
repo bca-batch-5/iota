@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+}
+
+.hero-image {
+  background-image: url("img/bc-5.jpg");
+  width: 100vw;
+  height: 454px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text button {
+  margin-top: 50px;
+  margin-left: 50px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  cursor: pointer;
+}
+.hero-text btn i {
+  color: black;
+}
+
+.hero-text p {
+  margin-top: 50px;
+  position: relative;
+  margin-right: 50px;
+  font-size: 30px;
+  line-height: 39px;
+  color: #ffffff;
+}
+
+.block {
+  margin-top: 10px;
+  margin-left: 20px;
+  height: 50px;
+}
+.block h1 {
+  text-align: center;
+  background-color: #fbcc38;
+  width: 95px;
+  border-radius: 15px;
+  height: 30px;
+  padding-top: 5px;
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.page-content {
+  margin-left: 50px;
+}
+.page-content h2 {
+  font-size: 50px;
+  line-height: 65px;
+  color: #000000;
+}
+.page-content h3 {
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+.page-content h4 {
+  font-size: 30px;
+  line-height: 39px;
+  color: #99d815;
+}
+.page-content p {
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #000000;
+}
+.page-content img {
+  position: absolute;
+  width: 200px;
+  height: 288.81px;
+  left: 1183px;
+  top: 253px;
+  filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+  border-radius: 15px;
+}
+
+.page-content button {
+  width: 240px;
+  height: 74px;
+  background: #fbcc38;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border-color: white;
+  color: #ffffff;
+  font-size: 38px;
+  justify-content: center;
+}
