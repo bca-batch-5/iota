@@ -27,7 +27,8 @@
   color: black;
 }
 
-.hero-text p {
+.hero-text a {
+  text-decoration: none;
   margin-top: 50px;
   position: relative;
   margin-right: 50px;
@@ -96,4 +97,64 @@
   color: #ffffff;
   font-size: 38px;
   justify-content: center;
+}
+
+/* modal */
+#editdata-Modal {
+  margin-top: 100px;
+  margin-left: 500px;
+  width: 800px;
+  height: 600px;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+#editdataModalLabel {
+  font-size: 40px;
+  line-height: 52px;
+  color: #000000;
+}
+.modal-content {
+  justify-content: center;
+  border-color: white;
+}
+
+.form-group label {
+  font-size: 30px;
+  line-height: 39px;
+  color: #000000;
+}
+.modal-footer button {
+  width: 100px;
+  height: 60px;
+  background: #fbcc38;
+  border-radius: 15px;
+  border-color: white;
+}
+.modal-header button {
+  width: 50px;
+  height: 50px;
+  color: red;
+  border-color: white;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: none;
+}
+#delete-modal {
+  margin-top: 100px;
+  margin-left: 500px;
+  width: 800px;
+  height: 600px;
+  justify-content: center;
+}
+#delete-modal img {
+  margin-left: 200px;
+  width: 100px;
+  height: 100px;
+}
+#delete-modal p {
+  font-size: 35px;
+  line-height: 46px;
+  color: #000000;
 }

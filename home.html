@@ -25,7 +25,7 @@
       <nav id="sidebar">
         <ul class="list-unstyled components">
           <div class="container-profile">
-            <img src="./img/lisa.jpg" alt="profile" />
+            <img src="./img/lisa.jpg" id="pprofile" alt="profile" />
             <p>Lalisa</p>
             <div class="container-list">
               <li>
@@ -35,7 +35,7 @@
                 <a href="#">History</a>
               </li>
               <li>
-                <a href="#">Add Book</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#adddata-Modal">Add Book</a>
               </li>
             </div>
           </div>
@@ -44,7 +44,7 @@
 
       <!-- Page Content  -->
       <div id="content">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg ">
           <div class="container-fluid">
             <!-- sidebar collapse -->
             <button type="button" id="sidebarCollapse" class="btn btn-info btn-light">
@@ -52,7 +52,7 @@
               <i class="fas fa-align-justify"></i>
             </button>
             <!-- navbar -->
-            <button class="btn btn-light d-inline-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="btn btn-light d-inline-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <i class="fas fa-align-justify"></i>
             </button>
 
@@ -87,7 +87,7 @@
                 </ul>
               </div>
               <div class="navbar-brand" href="#">
-                <img src="./img/logo.png" alt="" width="50px"  />
+                <img src="./img/logo.png " id="ilogo" alt="" width="50px"  />
                 <h1>Bookish</h1>
                </div>
 
@@ -99,6 +99,11 @@
                data-flickity-options='{ "wrapAround": true }'>
                <div class="gallery-cell">
                  <img src="./img/bc-1.jpg" alt="">
+                 <!-- <div class="carousel-body">
+                  <h3>Filosofi teras</h3>
+                  <div class="line"></div>
+                  <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, accusantium.</p>
+                </div> -->
                </div>
                <div class="gallery-cell">
                  <img src="./img/bc-2.jpg" alt="">
@@ -128,7 +133,9 @@
               <div class="row">
                   <div class="col-md-4 mb-3" >
                       <div class="card" >
-                          <img src="img/bc-6.jpg" class="card-img-top" alt="interest">
+                        <div class="card-img">
+                          <img src="img/bc-6.jpg" class="img-fluid" alt="interest">
+                        </div>
                           <div class="card-body">
                             <h3>The Things You Can See Only When You slow Down</h3>
                             <div class="line"></div>
@@ -139,7 +146,9 @@
                   </div>
                   <div class="col-md-4 mb-3" >
                       <div class="card"  >
-                          <img src="img/bc-7.jpg" class="card-img-top " alt="interest">
+                        <div class="card-img">
+                          <img src="img/bc-7.jpg" class="img-fluid" alt="interest">
+                        </div>
                           <div class="card-body">
                             <h3>Love for Imperfect things</h3>
                             <div class="line"></div>
@@ -150,9 +159,13 @@
                   </div>
                   <div class="col-md-4 mb-3" >
                       <div class="card" >
-                          <img src="img/bc-8.jpg" class="card-img-top" alt="interest">
+                        <div class="card-img">
+                          <img src="img/bc-5.jpg" class="img-fluid" alt="interest">
+                        </div>
                           <div class="card-body">
-                            <h3>I Want To Die But I Want To Eat Tteokpokki 2</h3>
+                            <h3><a href="detail.html">Laut bercerita
+
+                            </a></h3>
                             <div class="line"></div>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, accusantium</p>
                           </div>
@@ -163,6 +176,40 @@
           </div>
       </div>
     </div>
+
+    <!-- modal add -->
+    <div class="modal fade" id="adddata-Modal" tabindex="-1" role="dialog" aria-labelledby="adddataModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="adddataModalLabel">Add Data</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="urlimage" class="col-form-label">Url image:</label>
+                <input type="url" class="form-control" id="urlimage" placeholder="Url image..." />
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Tittle:</label>
+                <textarea class="form-control" id="message-text" placeholder="Tittle..."></textarea>
+                <div class="form-group">
+                  <label for="description" class="col-form-label">Description:</label>
+                  <textarea class="form-control" id="description" placeholder="Description..."></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
